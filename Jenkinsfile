@@ -1,9 +1,11 @@
+//test
+
 node
  {
   
-  def mavenHome = tool name: "maven3.6.2"
+  def mavenHome = tool name: "maven3.8.6"
   
-      echo "GitHub BranhName ${env.BRANCH_NAME}"
+      echo "GitHub BranhName https://github.com/marketplace${env.BRANCH_NAME}"
       echo "Jenkins Job Number ${env.BUILD_NUMBER}"
       echo "Jenkins Node Name ${env.NODE_NAME}"
   
@@ -46,7 +48,7 @@ node
  mail bcc: 'myanutech@gmail.com', body: '''Build is over
 
  Thanks,
- Landmark Technologies,
+ Anu Technologies,
  .''', cc: 'myanutech@gmail.com', from: '', replyTo: '', subject: 'Build is over!!', to: 'myanutech@gmail.com'
  }
  */
@@ -55,3 +57,6 @@ node
 
 
  }
+
+
+//test for github webhook
